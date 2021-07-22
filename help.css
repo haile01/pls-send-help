@@ -1,0 +1,42 @@
+@keyframes msg {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes acv {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.msg {
+  animation: msg ease-in-out 1s forwards;
+}
+
+.acv {
+  animation: acv ease-in-out .3s forwards;
+  height: 100%;
+  width: auto;
+}
+
+#achievement {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  transition: height .3s ease-in-out;
+}

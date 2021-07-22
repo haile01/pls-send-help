@@ -27,7 +27,7 @@ const addMessages = (ind) => {
     return;
   }
   addMessage(messages[ind]);
-  setTimeout(() => addMessages(ind + 1), 0);
+  setTimeout(() => addMessages(ind + 1), 1000);
 }
 
 const addAchievement = (acv) => {
